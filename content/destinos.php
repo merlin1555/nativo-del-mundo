@@ -1,12 +1,12 @@
 <section class="destinos" id="destinos">
     <div class="seccion_container">
-        <p class="sin-linea animate__animated animate__fadeIn">CONOCE NUESTROS</p>
-        <h2 class="animate__animated animate__fadeIn">DESTINOS DESTACADOS</h2>
+        <p class="sin-linea reveal-up">CONOCE NUESTROS</p>
+        <h2 class="reveal-up">DESTINOS DESTACADOS</h2>
 
         <div class="cards">
 
             <!-- TORRES DEL PAINE -->
-            <div class="flip-card card--paine">
+            <div class="flip-card card--paine" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="flip-card__inner">
 
                 <div class="flip-card__face flip-card__front">
@@ -29,7 +29,7 @@
             </div>
 
             <!-- DESIERTO DE ATACAMA -->
-            <div class="flip-card card--atacama">
+            <div class="flip-card card--atacama" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
                 <div class="flip-card__inner">
 
                 <div class="flip-card__face flip-card__front">
@@ -52,7 +52,7 @@
             </div>
 
             <!-- CHILOÉ -->
-            <div class="flip-card card--chiloe">
+            <div class="flip-card card--chiloe" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
                 <div class="flip-card__inner">
 
                 <div class="flip-card__face flip-card__front">

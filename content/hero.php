@@ -9,11 +9,11 @@
             A través de su red de profesionales y asociados, Nativo del Mundo diseña programas turísticos que integran a la gente local y ofrecen actividades culturales y naturales atractivas.
             </p>
             <div class="actions">
-            <a class="btn_ btn__primary" href="#contacto-marcas"><span>Conoce más</span></a>
-            <a class="btn_ btn__ghost" href="#como-funciona"><span>Contacto</span></a>
+            <a class="btn_ btn__primary animate__animated animate__pulse" href="#contacto-marcas"><span>Conoce más</span></a>
+            <a class="btn_ btn__ghost animate__animated animate__pulse" href="#como-funciona"><span>Contacto</span></a>
             </div>
         </div>
     </div>
-    <a id="btnTop" class="btn-top" href="#comienza">Comienza tu Aventura <i class="fa-solid fa-angles-down"></i></a>
+    <a id="btnTop" class="btn-top reveal-up" href="#comienza">Comienza tu Aventura <i class="fa-solid fa-angles-down"></i></a>
 <div class="degrade"></div>
 </section>

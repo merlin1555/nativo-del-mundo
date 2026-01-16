@@ -42,3 +42,24 @@ ScrollReveal().reveal('.reveal-delay-4', {
     delay: 600,
     reset: false
 });
+ScrollReveal().reveal('.reveal-delay-5', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 600,
+    delay: 750,
+    reset: false
+});
+ScrollReveal().reveal('.reveal-delay-6', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 600,
+    delay: 900,
+    reset: false
+});
+ScrollReveal().reveal('.reveal-delay-7', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 600,
+    delay: 1050,
+    reset: false
+});

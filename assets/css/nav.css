@@ -28,8 +28,7 @@
   RESPONSIVE: ESCRITORIO (≥ 960px)
   ========================================================= */
 @media (min-width:960px){
-    .site_nav{padding: 1.5em 7% !important;}
+    .site_nav{padding: 1.5em 7% !important; flex-wrap: wrap;}
     .site_nav .nav_element{margin-right: 1em;}
-    .site_nav .navbar-brand{margin-left: auto;}
     .navbar-expand-lg .navbar-collapse{justify-content: center;}
 }

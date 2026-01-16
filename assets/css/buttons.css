@@ -144,7 +144,7 @@
 /* ================================ Boton top ======================================== */ 
 .btn-top{
   position: absolute;
-  bottom: -4em;       /* ajusta a gusto */
+  bottom: -1em;       /* ajusta a gusto */
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;         /* sobre bg / degrade */
@@ -186,5 +186,5 @@
 }
 #btnVolverArriba img{
   width: 20px;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }

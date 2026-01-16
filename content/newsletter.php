@@ -1,4 +1,4 @@
-<section class="newsletter section" id="newsletter">
+<section class="newsletter section reveal-up" id="newsletter">
     <div class="seccion_container">
         <p class="text-top animate__animated animate__fadeIn">NEWSLETTER</p>
         <h2 class="animate__animated animate__fadeIn">SUSCRÍBETE A NUESTRO NEWSLETTER</h2>
