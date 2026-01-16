@@ -22,6 +22,7 @@
     .site_nav{padding: 1em 3% !important;}
     .navbar-toggler{margin-bottom: 1em !important;}
     .navbar-collapse{padding-left: 0.6em;}
+    .site_nav .nav_element{margin-bottom: 0.7em;}
 }
 
 /* =========================================================
