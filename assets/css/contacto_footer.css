@@ -1,0 +1,39 @@
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+.contacto_footer{position: relative;display: flex;align-items: center;width: 100%;}
+.contacto_footer .bg-opacity{position: absolute;inset: 0;/* top:0; right:0; bottom:0; left:0 */z-index: 2;}
+.contacto_footer .seccion_container{
+    background-image: url("../img/olga-stalska-QaWRyEdlffY-unsplash-2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.contacto_footer .contacto_footer_info{
+    display: flex;
+    align-items: center;
+}
+.contacto_footer .info_txt{
+    z-index: 3;
+    color: var(--paper);
+}
+.contacto_footer .info_txt h3{
+    text-transform: uppercase;
+}
+.contacto_footer .btn_info{
+    z-index: 3;
+}
+/* =========================================================
+  RESPONSIVE: MÓVILES / TABLET (≤ 959px)
+  ========================================================= */
+@media (max-width:959px){
+    .contacto_footer .seccion_container{padding: 2em 10%;text-align: center;}
+}
+
+/* =========================================================
+  RESPONSIVE: ESCRITORIO (≥ 960px)
+  ========================================================= */
+@media (min-width:960px){
+    .contacto_footer .seccion_container{padding: 5em 17%;}
+    .contacto_footer .info_txt{padding-right: 3em;}
+}

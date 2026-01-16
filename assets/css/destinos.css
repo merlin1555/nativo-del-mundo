@@ -1,0 +1,176 @@
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+.destinos{
+  background-color: var(--ink);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.destinos h2{
+  color: var(--paper);
+  margin-bottom: 1.3em;
+}
+
+.destinos .cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+/* =========================================================
+  FLIP CARD 3D
+  ========================================================= */
+
+/* Contenedor */
+.flip-card{
+  position: relative;      /* ✅ clave */
+  width: 280px;            /* ✅ fallback */
+  height: 300px;           /* ✅ fallback */
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+/* Pieza que rota */
+.flip-card__inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 600ms cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+}
+/* Estado por click (lo activa JS en móviles) */
+.flip-card.is-flipped .flip-card__inner{
+  transform: rotateY(180deg);
+}
+
+/* Hover SOLO para dispositivos con mouse real */
+@media (hover: hover) and (pointer: fine){
+  .flip-card:hover .flip-card__inner{
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-card__front::before,
+.flip-card__back::before{
+  pointer-events: none;
+}
+
+/* Ambas caras */
+.flip-card__face{
+  position: absolute;
+  inset: 0;
+  width: 100%;             /* ✅ fuerza tamaño */
+  height: 100%;            /* ✅ fuerza tamaño */
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 14px 40px rgba(0,0,0,.18);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+
+  /* (si quieres centrado consistente) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.flip-card__front{ transform: rotateY(0deg) translateZ(1px); }
+.flip-card__back { transform: rotateY(180deg) translateZ(1px); }
+
+
+/* =========================================================
+  FONDO POR CARD (UNA VEZ) — misma imagen para frente y atrás
+  ========================================================= */
+.card--paine   { --card-bg: url("../img/torres-del-paine.jpeg"); }
+.card--atacama { --card-bg: url("../img/atacama.jpeg"); }
+.card--chiloe  { --card-bg: url("../img/chiloe-3880513_1280.webp"); }
+
+/* Aplica el fondo a ambas caras */
+.flip-card__front,
+.flip-card__back{
+  background-image: var(--card-bg);
+  background-size: cover;
+  background-position: center;
+  color: var(--paper);
+}
+
+/* =========================================================
+  FRENTE: overlay 50% (sin "seams" al rotar)
+  ========================================================= */
+
+/* Empuja la cara un poquito hacia adelante para evitar z-fighting */
+.flip-card__front{
+  transform: rotateY(0deg) translateZ(1px);
+}
+
+.flip-card__front::before{
+  content: "";
+  position: absolute;
+  inset: -1px;             /* tapa líneas en bordes durante el giro */
+  background: rgba(0,0,0,.5);
+  border-radius: inherit;  /* respeta el borde redondeado */
+  z-index: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Contenido por sobre el overlay */
+.flip-card__front > *{
+  position: relative;
+  z-index: 1;
+}
+
+.flip-card__front h3{
+  letter-spacing: .05em;
+}
+
+/* =========================================================
+  ATRÁS: misma imagen + overlay 80% (sin "seams" al rotar)
+  ========================================================= */
+
+/* Empuja la cara un poquito hacia adelante para evitar z-fighting */
+.flip-card__back{
+  transform: rotateY(180deg) translateZ(1px);
+  color: #fff;
+}
+
+.flip-card__back::before{
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: rgba(0,0,0,.8);
+  border-radius: inherit;
+  z-index: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Contenido por sobre overlay */
+.flip-card__back > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+  RESPONSIVE
+  ========================================================= */
+@media (max-width:959px){
+  .contacto_footer .seccion_container{ padding: 5em 15%; }
+  .destinos .cards{ flex-direction: column; }
+  .flip-card{ width: 70vw; height: 35vh; }
+  .destinos{ padding-top: 4em; padding-bottom: 4em; }
+}
+
+@media (min-width:960px){
+  .contacto_footer .seccion_container{ padding: 5em 17%; }
+  .destinos{ padding-top: 5em; padding-bottom: 6em; }
+  .flip-card{ width: 25vw; height: 45vh; }
+}

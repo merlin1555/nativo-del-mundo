@@ -1,0 +1,56 @@
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+#hero{
+  position: relative;
+  background-image: url("../img/202.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed
+}
+#hero .seccion_container{margin: 3em 0;}
+.bg-opacity {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+.site_nav,
+.hero_info > *:not(.bg-opacity) {
+  position: relative;
+  z-index: 2;
+}
+.hero_info{color: var(--paper);}
+.hero_info h1{text-transform: uppercase;font-weight: bolder;margin-bottom: 0.5em;}
+.hero_info .lead{margin-bottom: 1.5em;}
+.hero_info .actions a{margin-right: 1em;}
+.degrade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 20vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 29, 38, 0) 0%,
+    rgba(11, 29, 38, 0.4) 35%,
+    rgba(11, 29, 38, 0.75) 65%,
+    #0B1D26 100%
+  );
+  z-index: 3;
+}
+/* =========================================================
+  RESPONSIVE: MÓVILES / TABLET (≤ 959px)
+  ========================================================= */
+@media (max-width:959px){
+  #hero .seccion_container{padding: 0 6%;}
+  #hero{min-height: 88vh;}
+}
+
+/* =========================================================
+  RESPONSIVE: ESCRITORIO (≥ 960px)
+  ========================================================= */
+@media (min-width:960px){
+  #hero{min-height: 85vh;}
+  .hero_info{padding: 3em 7%;}
+  .hero_info{width: 50%;margin: 0 auto;}
+}

@@ -1,0 +1,42 @@
+/* =========================================================
+  TOKENS / THEME
+  ========================================================= */
+:root{
+  /* Fondo General */
+  --bg:#f7fffd;
+  --bg-2: #f6f6f2;
+  --paper:#fff;
+  --shadow:0 10px 30px rgba(15,43,58,.08);
+
+  /* Fuentes */
+  --ink:#0B1D26;
+  --fuente:#1B1D1D;
+  --muted:#495A64;
+  
+  /* Marca */
+  --brand-light: #FBD784;
+  --brand: #F95D77;
+  --brand-dark: #514899;
+}
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+body{margin: 0;background-color: var(--bg); transition: all 0.5s;}
+.muted{color: var(--muted);}
+html{scroll-behavior:smooth;}
+.container-fluid{padding: 0 !important;}
+/* =========================================================
+  RESPONSIVE: MÓVILES / TABLET (≤ 959px)
+  ========================================================= */
+@media (max-width:959px){
+.section{padding: 2em 4%;}
+.elemento_escritorio{display: none;}
+}
+
+/* =========================================================
+  RESPONSIVE: ESCRITORIO (≥ 960px)
+  ========================================================= */
+@media (min-width:960px){
+.section{padding: 2em 13%;}
+.elemento_movil{display: none;}
+}

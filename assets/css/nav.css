@@ -1,0 +1,34 @@
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+.site_nav a{
+    color: var(--paper);
+    text-decoration: none;
+}
+.site_nav .navbar-brand{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
+.site_nav .nav_element{
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
+
+/* =========================================================
+  RESPONSIVE: MÓVILES / TABLET (≤ 959px)
+  ========================================================= */
+@media (max-width:959px){
+    .site_nav{padding: 1em 3% !important;}
+}
+
+/* =========================================================
+  RESPONSIVE: ESCRITORIO (≥ 960px)
+  ========================================================= */
+@media (min-width:960px){
+    .site_nav{padding: 1.5em 7% !important;}
+    .site_nav .nav_element{margin-right: 1em;}
+    .site_nav .navbar-brand{margin-left: auto;}
+    .navbar-expand-lg .navbar-collapse{justify-content: center;}
+}

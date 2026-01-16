@@ -1,0 +1,19 @@
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+.newsletter{text-align: center;}
+.newsletter .seccion_container .text-top{color: var(--brand);font-weight: bold;}
+.newsletter .seccion_container h2{color: var(--brand-dark);}
+/* =========================================================
+  RESPONSIVE: MÓVILES / TABLET (≤ 959px)
+  ========================================================= */
+@media (max-width:959px){
+    .newsletter{padding: 5em 13%;}
+}
+
+/* =========================================================
+  RESPONSIVE: ESCRITORIO (≥ 960px)
+  ========================================================= */
+@media (min-width:960px){
+    .newsletter{padding-top: 5em;padding-bottom: 5em;}
+}

@@ -1,0 +1,34 @@
+/* =========================================================
+  ESTILOS GENERALES
+  ========================================================= */
+#comienza{
+    background-color: var(--ink);min-height: 50vh;
+    padding-top: 9em;    
+}
+#comienza .seccion_container{display: flex;}
+.comienza_img{display: flex;align-items: center;}
+.comienza_img img{
+  width: 100%;
+  border-radius: 4px;
+}
+.comienza_info{color: var(--paper);}
+.comienza_info h2{margin-bottom: 0.5em;}
+.comienza_info p{margin-bottom: 1.5em;}
+/* =========================================================
+  RESPONSIVE: MÓVILES / TABLET (≤ 959px)
+  ========================================================= */
+@media (max-width:959px){
+  #comienza{padding-top: 6em;padding-bottom: 4em;}
+  .comienza_info{margin-bottom: 2em;}
+  #comienza .seccion_container{flex-direction: column;}
+}
+
+/* =========================================================
+  RESPONSIVE: ESCRITORIO (≥ 960px)
+  ========================================================= */
+@media (min-width:960px){
+  #comienza{padding-top: 9em;padding-bottom: 7em;}
+  .comienza_info{width: 55%;}
+  .comienza_img{width: 45%;}
+  .comienza_img{padding-left: 2em;}
+}

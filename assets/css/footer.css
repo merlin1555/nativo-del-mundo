@@ -1,0 +1,119 @@
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer{
+  color:#6b7a83;
+  font-size:14px;
+}
+
+.site-footer{
+  background:var(--ink);
+  color:#e9f1f4;
+  padding: 3em 10%;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.site-footer .container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.site-footer .container div{
+  margin-bottom: 1.5em;
+}
+.footer_logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_info h3{
+margin-bottom: 0.5em;}
+.footer_info p{
+  margin-bottom: 0;
+}
+.footer_nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.site-footer a{
+  color:#fafeff;
+  text-decoration:none;
+}
+
+.fcols{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  gap:28px;
+  align-items:start;
+  margin-bottom:12px;
+}
+.footer_contacto{display: flex;flex-direction: column;}
+.footer_contacto a{width: 100%;margin-bottom: 0.7em;transition: all 0.5s;}
+.footer_contacto a:hover{color: var(--brand-light);}
+.site-footer h4{
+  margin:0 0 0.3em;
+  font-size:16px;
+  color:#fff;
+}
+
+.flinks ul,
+.fcontact ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.flinks li,
+.fcontact li{
+  margin:6px 0;
+}
+
+.ft-brand .dot{
+  background:linear-gradient(180deg,#25B3E6,#0C6E8F);
+}
+
+.fsocial{
+  display:flex;
+  gap:12px;
+  margin-top:8px;
+  flex-wrap:wrap;
+}
+
+.fbottom{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:12px;
+}
+.fbottom ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.fbottom ul a{
+  transition: color 0.2s ease;
+}
+.fbottom ul a:hover{
+  color: var(--brand-light);
+}
+.fbottom button{
+  color: var(--paper);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.fbottom button:hover{
+  color: var(--brand-light);
+}
