@@ -18,7 +18,7 @@
   RESPONSIVE: MÓVILES / TABLET (≤ 959px)
   ========================================================= */
 @media (max-width:959px){
-  #comienza{padding-top: 6em;padding-bottom: 4em;}
+  #comienza{padding-top: 4em;padding-bottom: 4em;}
   .comienza_info{margin-bottom: 2em;}
   #comienza .seccion_container{flex-direction: column;}
 }
@@ -27,7 +27,7 @@
   RESPONSIVE: ESCRITORIO (≥ 960px)
   ========================================================= */
 @media (min-width:960px){
-  #comienza{padding-top: 9em;padding-bottom: 7em;}
+  #comienza{padding-top: 5em;padding-bottom: 7em;}
   .comienza_info{width: 55%;}
   .comienza_img{width: 45%;}
   .comienza_img{padding-left: 2em;}
