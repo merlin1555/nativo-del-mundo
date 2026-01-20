@@ -143,11 +143,11 @@
 }
 /* ================================ Boton top ======================================== */ 
 .btn-top{
-  position: absolute;
+  position: absolute !important;
   bottom: 0em;       /* ajusta a gusto */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;         /* sobre bg / degrade */
+  z-index: 6;         /* sobre bg / degrade */
 
   opacity: 1;
   pointer-events: auto;

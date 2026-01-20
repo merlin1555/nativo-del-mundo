@@ -36,16 +36,33 @@
   ========================================================= */
 @media (max-width:959px){
   #hero .seccion_container{padding: 0 6%;}
-  #hero{min-height: 83vh;}
+  .hero_info .con-linea{font-size: 75%;}
+  /* Montañas */
+  #hero .hero__mountains{
+    background-size: cover;
+  }
+
+  /* Césped */
+  #hero .hero__grass{
+    background-size: cover;
+  }
 }
 
 /* =========================================================
   RESPONSIVE: ESCRITORIO (≥ 960px)
   ========================================================= */
 @media (min-width:960px){
-  #hero{min-height: 90vh;}
   .hero_info{padding: 3em 7%;}
   .hero_info{width: 50%;margin: 0 auto;}
+  /* Montañas */
+  #hero .hero__mountains{
+    background-size: 100% 100%;
+  }
+
+  /* Césped */
+  #hero .hero__grass{
+    background-size: 100% 100%;
+  }
 }
 
 #hero{
@@ -90,7 +107,6 @@
 /* Montañas */
 #hero .hero__mountains{
   background-image: url("../img/bg/montanas.png");
-  background-size: 100% 100%;
   background-position: center 50%;   /* ⬇ más abajo */
   z-index: 1;
 }
@@ -98,7 +114,6 @@
 /* Césped */
 #hero .hero__grass{
   background-image: url("../img/bg/cesped.png");
-  background-size: 100% 100%;
   background-position: center 90%;   /* ⬇ mucho más abajo */
   z-index: 2;
 }
@@ -116,7 +131,6 @@
 /* Contenido arriba */
 #hero nav,
 #hero .seccion_container,
-#hero #btnTop,
 #hero .degrade{
   position: relative;
   z-index: 4;
