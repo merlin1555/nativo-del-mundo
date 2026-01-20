@@ -3,7 +3,7 @@
   ========================================================= */
 .partners{text-align: center;}
 .partners h2{color: var(--brand-dark);text-transform: uppercase;margin-bottom: 1em;}
-.partners .partners_list{display: flex;list-style: none;justify-content: space-around;}
+.partners .partners_list{display: flex;list-style: none;justify-content: space-around;margin: 0;padding: 0;}
 .partners_list li{display: flex;align-items: center;}
 .partners_list img{width: 100%;}
 /* =========================================================
