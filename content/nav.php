@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark site_nav">
     <div class="container-fluid">
         <a class="navbar-brand reveal-up" href="./">Nativo del mundo</a>
-        <div class="elemento_movil"><a class="btn_ btn__primary" href="#contacto-marcas"><span>Crear anuncio</span></a></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

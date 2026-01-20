@@ -30,7 +30,7 @@ html{scroll-behavior:smooth;}
   ========================================================= */
 @media (max-width:959px){
 .section{padding: 2em 4%;}
-.elemento_escritorio{display: none;}
+.elemento_escritorio{display: none !important;}
 }
 
 /* =========================================================
@@ -38,5 +38,5 @@ html{scroll-behavior:smooth;}
   ========================================================= */
 @media (min-width:960px){
 .section{padding: 2em 13%;}
-.elemento_movil{display: none;}
+.elemento_movil{display: none !important;}
 }
