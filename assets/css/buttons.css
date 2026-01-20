@@ -144,7 +144,7 @@
 /* ================================ Boton top ======================================== */ 
 .btn-top{
   position: absolute;
-  bottom: -1em;       /* ajusta a gusto */
+  bottom: 0em;       /* ajusta a gusto */
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;         /* sobre bg / degrade */

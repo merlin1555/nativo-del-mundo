@@ -1,13 +1,7 @@
 /* =========================================================
   ESTILOS GENERALES
   ========================================================= */
-#hero{
-  position: relative;
-  background-image: url("../img/202.webp");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed
-}
+
 .bg-opacity {
   position: absolute;
   inset: 0; /* top:0; right:0; bottom:0; left:0 */
@@ -52,4 +46,86 @@
   #hero{min-height: 90vh;}
   .hero_info{padding: 3em 7%;}
   .hero_info{width: 50%;margin: 0 auto;}
+}
+
+#hero{
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/bg/cielo-full.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Contenedor de capas (ocupando TODO el hero) */
+#hero .hero__layer{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-repeat: no-repeat;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+}
+
+/* Cielo fijo (no se mueve con JS) */
+#hero .hero__sky{
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center top;
+  transform: none !important;
+  z-index: 0;
+
+  /* NUEVO */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease;
+}
+#hero.is-active .hero__sky{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Montañas */
+#hero .hero__mountains{
+  background-image: url("../img/bg/montanas.png");
+  background-size: 100% 100%;
+  background-position: center 50%;   /* ⬇ más abajo */
+  z-index: 1;
+}
+
+/* Césped */
+#hero .hero__grass{
+  background-image: url("../img/bg/cesped.png");
+  background-size: 100% 100%;
+  background-position: center 90%;   /* ⬇ mucho más abajo */
+  z-index: 2;
+}
+
+
+/* Tu overlay encima de fondos */
+#hero .bg-opacity{
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  /* OJO: debe ser transparente, NO sólido */
+  /* background: rgba(0,0,0,.35); */
+}
+
+/* Contenido arriba */
+#hero nav,
+#hero .seccion_container,
+#hero #btnTop,
+#hero .degrade{
+  position: relative;
+  z-index: 4;
+}
+
+/* Mobile fallback (fixed a veces no rinde bien) */
+@media (max-width: 768px){
+  #hero .hero__sky{ position: absolute; }
+}
+#hero .hero__grass{
+  transform: scale(1.03);
 }
